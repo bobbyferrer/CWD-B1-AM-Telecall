@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title> MY LIBRARY</title>
+</head>
+<body class="white">
+    <!--Nav Content-->
+    <nav class="black">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="" class="brand-logo pink-text text-lighten-2">
+                  <b>My Library</b>
+                </a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger">
+                    <i class="material-icons white-text">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="active">
+                        <a href="index.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="posts.html">Categories</a>
+                    </li>
+                    <li>
+                        <a href="posts.html">Comments</a>
+                    </li>
+                    <li>
+                        <a href="posts.html">Users</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Side Nav Structure-->
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background white"></div>
+                <a href="#">
+                    <img src="" alt="">
+                </a>
+                <a href="#">
+                    <span class="name white-text">Claire Anne Macayan</span>
+                </a>
+                <a href="#">
+                    <span class="email white-text">claireannemacayannn@gmail.com</span>
+                </a>
+            </div>
+        </li>
+        <li class="divider"></li>
+        <li class="active"><a href="">
+            <a href="index.html" class="material-icons">Dashboard</i></a>
+        </li>
+    </ul>
+  
+
+    <!--Section Visitor-->
+<section class="section section-visitors grey">
+    <div class="row">
+        <div class="col s12 m6 l8">
+            <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+        </div>
+        <div class="col s12 m6 l4">
+    <!--Latest Comments-->
+            <ul class="collection with-header latest-comments">
+                <li class="black pink-text text-lighten-3 collection-header">
+                    <h5>Latest Comments</h5>
+                </li>
+                <li class="collection-item avatar">
+                    <img src="IMAGES/Blair.jpg" alt="" class="circle">
+                    <span class="title"><b>Blair</b></span>
+                    <p> so interesting</p>
+                    <a href="#" class="approve green-text">Approve</a>
+                    <a href="#" class="deny red-text">Deny</a>
+                </li>
+                <li class="collection-item avatar">
+                    <img src="IMAGES/Ane.JPG" alt="" class="circle">
+                    <span class="title"><b>Anneliese</b></span>
+                    <p> so interesting</p>
+                    <a href="#" class="approve green-text">Approve</a>
+                    <a href="#" class="deny red-text">Deny</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section section-stats">
+  <div class="row">
+    <div class="card">
+      <div class="card-panel">
+        <div class="card-content">
+        
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l8">
+      <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    </div>
+  </div>
+</section>
+
+    <!-- JQuery CDN-->
+    <script src=""></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- CDN Canvas.js -->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="js/chart-claire.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav({
+                edge: 'right',
+                inDuration: 1000,
+                outDuration: 1000,
+                preventScrolling: true
+            });
+        });
+    </script>
+</body>
+</html>

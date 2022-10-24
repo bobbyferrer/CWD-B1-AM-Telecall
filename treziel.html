@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" contant="IE-Edge">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Blue</title>
+</head>
+<body class="blue lighten-4">
+  <div class="container">        
+        <!-- section starts -->
+        <section class="section section-stats center">
+            <div class="row">
+                <div class="col s12 m6 l3">
+                    <div class="card-panel blue lighten-1 white-text center">
+                        <i class="material-icons medium">adjust</i>
+                        <h5>target</h5>
+                        <h3 class="count">3000</h3>
+                        <div class="progress">
+                            <div class="indeterminate blue"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card-panel blue lighten-3 white-text center">
+                        <i class="material-icons medium">ac_unit</i>
+                        <h5>snowflake</h5>
+                        <h3 class="count">3000</h3>
+                        <div class="progress">
+                            <div class="indeterminate blue lighten-3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card-panel blue lighten-3 white-text center">
+                        <i class="material-icons medium">account_balance</i>
+                        <h5>bank account</h5>
+                        <h3 class="count">3000</h3>
+                        <div class="progress">
+                            <div class="indeterminate blue lighten-3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card-panel blue white-text center">
+                        <i class="material-icons medium">adb</i>
+                        <h5>android</h5>
+                        <h3 class="count">3000</h3>
+                        <div class="progress">
+                            <div class="indeterminate blue"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section:visitors -->
+        <section class="section section-visitors amber lighten-4 content">
+            <div class="row">
+              <div class="col s12 m6 l8">
+                <div id="chartContainer" style="height: 300px; width: 100%"></div>
+              </div>
+                <div class="col s12 m6 l4">
+                    <ul class="collection with-header latest-comments">
+                        <li class="collection-header">
+                            <h5>Latest Comments</h5>  
+                        </li>
+                        <li class="collection-item avatar">
+                            <img src="images/img1.jpg" alt="" class="circle">
+                            <span class="title">Calum Hood</span>
+                            <p class="truncate">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel placeat error maxime distinctio illo cumque dolorem veniam dignissimos repellat ducimus ipsam quae, est suscipit, corporis ab quas nulla voluptates. Molestiae!</p>
+                            <a onclick="M.toast({html: 'comment has been approved', classes: 'rounded'});" class="approved green-text">Like</a> |
+                            <a onclick="M.toast({html: 'comment has been disliked', classes: 'rounded'});" class="deny red-text">Dislike</a>
+                        </li>
+                        <li class="collection-item avatar">
+                            <img src="images/img5.jpg" alt="" class="circle">
+                            <span class="title">Blue</span>
+                            <p class="truncate">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel placeat error maxime distinctio illo cumque dolorem veniam dignissimos repellat ducimus ipsam quae, est suscipit, corporis ab quas nulla voluptates. Molestiae!</p>
+                            <a onclick="M.toast({html: 'comment has been approved', classes: 'rounded'});" class="approved green-text">Like</a> |
+                            <a onclick="M.toast({html: 'comment has been disliked', classes: 'rounded'});" class="deny red-text">Dislike</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+             <!-- Preloader -->
+        <div class="preloader-wrapper big active" id="loader">
+          <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+  <!-- canvasjs -->
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script src="js/chart-treziel.js"></script>
+
+
+
+</body>
+</html>

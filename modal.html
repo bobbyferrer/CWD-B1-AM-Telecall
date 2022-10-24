@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body class="grey lighten-3">
+  <div class="container">
+    <h1 class="pink-text">Modal</h1>
+    <!-- Modal trigger -->
+    <div class="row">
+      <div class="col s12 m6">
+       <a href="#modal1" class="modal-trigger">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/img1.jpg">
+            <span class="card-title">Card Title</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+          </div>
+        </div>
+       </a>
+         <!-- Modal trigger -->
+         <a href="#modal2" class="btn brown waves-effect waves-light modal-trigger">Modal 2</a>
+         <!-- Modal trigger -->
+        <a href="#modal3" class="btn red waves-effect waves-light modal-trigger">Modal 3</a>
+        <br><br>
+      </div>
+      <div class="col s12 m6">
+        <div class="card-panel grey lighten-4 z-depth-5">
+         <div class="row valign-wrapper">
+           <div class="col s4">
+            <img src="images/img1.jpg" alt="" class="circle responsive-img">
+           </div>
+           <div class="col s8">
+            <span class="black-text">This is a sqaure image. Add the "circle" class to it make it appear circular.</span>
+           </div>
+         </div>
+        </div>
+        <img src="images/img2.jpg" alt="" class="responsive-img z-depth-3">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="video-container">
+          <iframe width="1040" height="585" src="https://www.youtube.com/embed/lcQDjcFzL-c" title="Materialize Tutorial #2 - Setting Up" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <video src="" class="responsive-video" controls>
+        <source src="videos/movie.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <img src="images/img5.jpg" alt="" class="responsive-img materialboxed">
+      </div>    
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="slider">
+          <ul class="slides">
+            <li>
+              <img src="images/img6.jpg" alt="">
+              <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our smal slogan</h5>
+              </div>
+            </li>
+            <li>
+              <img src="images/img7.jpg" alt="">
+              <div class="caption left-align">
+                <h3>Left Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our smal slogan</h5>
+              </div>
+            </li>
+            <li>
+              <img src="images/img8.jpg" alt="">
+              <div class="caption right-align">
+                <h3>Right Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our smal slogan</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+   
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, itaque!</p>
+      </div>
+      <div class="modal-footer">
+        <a href="" class="modal-close waves-effect waves-light btn-flat">agree</a>
+      </div>
+    </div>
+
+   
+
+    <!-- Modal Structure -->
+    <div id="modal2" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, corrupti odit? Quia, itaque id. Nobis explicabo dicta sit, incidunt voluptatem quis tenetur, voluptatibus, dolorum deleniti quae quod deserunt. Aut mollitia et illum ratione, ipsum autem iusto dolores nobis praesentium voluptatum dolorum enim, ullam tempore, assumenda sequi! Eligendi harum aspernatur soluta quos facilis dolorem excepturi! Libero ipsam minus cum velit facere, consequuntur, laboriosam ullam repellat, quae suscipit dolorum commodi id eligendi illo ab architecto adipisci quas quos nihil veritatis eaque ad dolores dolor. Facere unde voluptatum quo libero, corporis ipsum recusandae aperiam nam dolorum nihil asperiores obcaecati blanditiis esse, amet labore?</p>
+      </div>
+      <div class="modal-footer">
+        <a href="" class="modal-close waves-effect waves-light btn-flat">agree</a>
+      </div>
+    </div>
+     
+
+    <div id="modal3" class="modal bottom-sheet">
+      <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, corrupti odit? Quia, itaque id. Nobis explicabo dicta sit, incidunt voluptatem quis tenetur, voluptatibus, dolorum deleniti quae quod deserunt. Aut mollitia et illum ratione, ipsum autem iusto dolores nobis praesentium voluptatum dolorum enim, ullam tempore, assumenda sequi! Eligendi harum aspernatur soluta quos facilis dolorem excepturi! Libero ipsam minus cum velit facere, consequuntur, laboriosam ullam repellat, quae suscipit dolorum commodi id eligendi illo ab architecto adipisci quas quos nihil veritatis eaque ad dolores dolor. Facere unde voluptatum quo libero, corporis ipsum recusandae aperiam nam dolorum nihil asperiores obcaecati blanditiis esse, amet labore?</p>
+      </div>
+
+  
+
+
+    <!-- End of the container -->
+ </div>
+  
+
+
+  <!-- Jquery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    // Init modal
+    $('.modal').modal();
+    // Init materialbox
+    $('.materialboxed').materialbox();
+    // Init slider
+    $('.slider').slider({
+      indicators: true,
+      height: 200,
+      duration: 6000,
+      interval: 6000
+    });
+  });
+ 
+</script>
+</body>
+</html>
+
+
+<!-- Create modal.html -->
+<!-- DO the modal component, modal with button trigger, Modals with Fixed Footer, Bottom Sheet Modals -->

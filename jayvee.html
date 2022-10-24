@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <!--Icons-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    <title>Anime Hub</title>
+</head>
+<body class="grey darken-4">
+  
+    <nav class="purple lighten-1">
+      <div class="container">
+        <div class="nav-wrapper">
+            <a href="" class="brand-logo grey-text text-lighten-3">Anime Hub</a>
+            <a href="#" data-target="slide-out" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li class="active">
+                  <a href="index.html">Dashboard</a>
+              </li>
+              <li>
+                  <a href="posts.html">Posts</a>
+              </li>
+              <li>
+                  <a href="posts.html">Categories</a>
+              </li>
+              <li>
+                  <a href="posts.html">Comments</a>
+              </li>
+              <li>
+                  <a href="posts.html">Users</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Sidenav Structure-->
+    <ul id="slide-out" class="sidenav purple lighten-2">
+      <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="images/img1.jpg">
+            </div>
+            <a href="#user">
+              <img class="circle" src="images/img5.jpg">
+            </a>
+            <a href="#name">
+              <span class="white-text name">John Doe</span>
+            </a>
+            <a href="#email">
+              <span class="white-text email">jdandturk@gmail.com</span>
+            </a>
+          </div>
+      </li>
+      <li>
+        <a href="#!">
+          <i class="material-icons">cloud</i>
+          First Link With Icon
+        </a>
+      </li>
+      <li>
+        <a href="#!">Second Link</a>
+      </li>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li>
+        <a class="subheader">Subheader</a>
+      </li>
+      <li>
+        <a class="waves-effect" href="#!">
+          Third Link With Waves
+        </a>
+      </li>
+    </ul>
+
+
+
+    <!--Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!--Compiled and minified JavaScriprt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
+    <script>
+    // $(document).ready(function(){
+    //     $('.sidenav').sidenav({
+    //         edge: 'right',
+    //         inDuration: 1000,
+    //         outDuration: 1000,
+    //         preventScrolling: true
+    //     });
+    //   });
+
+      $(document).ready(function() {
+        $('.sidenav').sidenav();
+      });
+    </script>
+   
+</body>
+</html>
